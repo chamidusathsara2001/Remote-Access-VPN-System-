@@ -1,0 +1,15 @@
+root {
+    test { "{0,number,integer} monkeys on {1,number,integer} trees make {2,number} monkeys per tree" }
+
+    errors {
+        test { "The test for {0} passed!" }
+
+        UnknownBankIdException { "Unknown {0} bankId" }
+        InvalidTokenException { "Invalid token. Please authenticate again to generate a new token" }
+        EmptyParsedBodyException { "Your request is empty or no Content-Type is provided" }
+        RequiredValueException { "{0} value is required" }
+        AuthenticationException { "{0}" }
+        UnknownAccountIdException { "Unknown {0} accountId" }
+        ExpiredAuthenticationException { "Expired authentication for bank {0}" }
+    }
+}
